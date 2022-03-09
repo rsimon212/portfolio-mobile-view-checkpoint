@@ -1,0 +1,48 @@
+h1{
+    font-size: 24px;
+    margin: 12px 0;
+}
+
+footer{
+    background-color: khaki;
+    padding: 32px 8px;
+}
+
+.active{
+    background-color: rgb(119, 189, 235);
+    font-weight: bold;
+    border: 2px solid black; 
+}
+
+img{
+    width: 200px;
+    margin: 18px 18px;
+    padding: 10px;
+    border: 4px solid blue;
+    border-radius: 25px;
+    background-color: rgb(0, 153, 255);
+}
+
+img:hover:nth-child(2n){
+    filter: sepia();
+    border: dashed; 
+ } 
+
+video{
+    width: 300px;
+    border: 4px solid red;
+    border-radius: 20px;
+    margin: auto;
+}
+
+.page {
+    background-color: yellow;
+}
+
+div {
+    padding: 10px;
+}
+
+nav li{
+    padding: 8px;
+}
