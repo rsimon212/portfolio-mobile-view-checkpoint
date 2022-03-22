@@ -2,6 +2,16 @@ body {
     font-family: 'Space Mono', monospace;
 }
 
+.background {
+    background-image: url("../images/bighousefall2021.jpeg");
+    background-size: contain;
+    
+}
+
+.text_on_background {
+    color: white;
+}
+
 h1{
     font-size: 24px;
     margin: 12px 0;
@@ -10,6 +20,16 @@ h1{
 footer{
     background-color: khaki;
     padding: 32px 8px;
+}
+
+.nav_links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+a:visited {
+    color: blue;
 }
 
 .active{
