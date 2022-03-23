@@ -9,7 +9,9 @@ body {
 }
 
 .text_on_background {
-    color: white;
+    color: black;
+    background-color: white;
+    opacity: 0.6;
 }
 
 h1{
@@ -47,11 +49,6 @@ img{
     background-color: rgb(0, 153, 255);
 }
 
-img:hover:nth-child(2n){
-    filter: sepia();
-    border: dashed; 
- } 
-
 video{
     width: 300px;
     border: 4px solid red;
@@ -72,7 +69,23 @@ nav li{
 }
 
 
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;   
+}
 
+#contact_text {
+    width: 700px;
+}
+
+#contact_image {
+    width: 400px;
+    margin: -50px 300px 0px 0px;
+    padding: 0px;
+    border: 0px solid;
+    border-radius: 0px;
+}
 @media screen and (min-width:720px){
 
 }
