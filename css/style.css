@@ -4,8 +4,28 @@ body {
 
 .background {
     background-image: url("../images/bighousefall2021.jpeg");
-    background-size: contain;
-    
+    background-size: cover;
+}
+
+.skip {
+    background: white;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+}
+
+a.skip:focus{
+    top:40px;
+    color: black;
+    text-decoration-style: solid;
+  }
+
+header {
+    background-color: lightblue;
 }
 
 .text_on_background {
@@ -15,9 +35,26 @@ body {
 }
 
 h1{
-    font-size: 24px;
+    font-size: 48px;
     margin: 12px 0;
+    text-align: center;
+    animation: move 3s ease;
 }
+
+@keyframes move {
+    from {
+        font-size: 12px;
+        margin-top: 0;
+        color: red;
+    }
+}
+
+@media (prefers-reduced-motion) {
+    h1 {
+        animation: none;
+    }
+}
+
 
 footer{
     background-color: khaki;
@@ -41,12 +78,13 @@ a:visited {
 }
 
 img{
-    width: 200px;
+    width: 125px;
     margin: 18px 18px;
-    padding: 10px;
+    padding: 5px;
     border: 4px solid blue;
     border-radius: 25px;
     background-color: rgb(0, 153, 255);
+    align-self: center;
 }
 
 video{
@@ -68,6 +106,14 @@ nav li{
     padding: 8px;
 }
 
+.about-me-pics-container {
+    text-align: center;
+}
+
+.about-me-pic {
+    display: inline-block;
+}
+
 
 .contact {
     display: flex;
@@ -86,6 +132,75 @@ nav li{
     border: 0px solid;
     border-radius: 0px;
 }
-@media screen and (min-width:720px){
 
+.container1 {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+
+.setFirstMichPic {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2 ;
+    justify-self: center;
+}
+
+.setSecondMichPic {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    justify-self: center;
+}
+
+.setThirdMichPic {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    justify-self: center;
+}
+
+.setFourthMichPic {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+    justify-self: center;
+}
+
+.setFifthMichPic {
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
+    justify-self: center;
+}
+
+.setSixthMichPic {
+    grid-column: 2 / 3;
+    grid-row: 6 / 7;
+    justify-self: center;
+}
+
+.setSeventhMichPic {
+    grid-column: 1 / 2;
+    grid-row: 7 / 8;
+    justify-self: center;
+}
+
+.setEighthMichPic {
+    grid-column: 2 / 3;
+    grid-row: 8 / 9;
+    justify-self: center;
+}
+
+.fan-pics-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+@media screen and (min-width: 720px) {
+    img {
+        width: 300px;
+    }
+
+    p {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
 }
