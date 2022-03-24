@@ -2,8 +2,9 @@ body {
     font-family: 'Space Mono', monospace;
 }
 
-.background {
+.background_image {
     background-image: url("../images/bighousefall2021.jpeg");
+    background-color: #f1f1f1;
     background-size: cover;
 }
 
@@ -28,10 +29,12 @@ header {
     background-color: lightblue;
 }
 
-.text_on_background {
+.top_text_on_background {
     color: black;
-    background-color: white;
-    opacity: 0.6;
+}
+
+.bottom_text_on_background {
+    color:white;
 }
 
 h1{
@@ -39,6 +42,10 @@ h1{
     margin: 12px 0;
     text-align: center;
     animation: move 3s ease;
+}
+
+h1:hover {
+    color: green;
 }
 
 @keyframes move {
@@ -130,7 +137,7 @@ nav li{
 
 #contact_image {
     width: 400px;
-    margin: -50px 300px 0px 0px;
+    position: relative;
     padding: 0px;
     border: 0px solid;
     border-radius: 0px;
@@ -199,4 +206,13 @@ nav li{
         margin-left: 100px;
         margin-right: 100px;
     }
+}
+
+#gif_to_audio_text {
+    font-size: 30px;
+    text-align: center;
+}
+
+#hidden_until_button_click {
+    display: none;
 }

@@ -18,6 +18,21 @@
 
     gtag('config', 'G-BYK1CHG965');
     </script>
+    <script type="text/javascript">
+    function showDiv() {
+        document.getElementById('hidden_until_button_click').style.display = "flex";
+        document.getElementById('hidden_until_button_click').style.justifyContent = "center"
+        document.getElementById('hidden_until_button_click').style.alignItems = "center"
+        document.getElementById('hidden_until_button_click').style.flexDirection = "column"
+    }
+    </script>
+
+    <script type="text/javascript"> 
+        function playAudio(){
+            var x = document.getElementById("borntorun");
+            x.play();
+        }
+    </script>
     <title>Hobbies</title>
 </head>
 <body>
@@ -53,6 +68,15 @@
                 <img src="images/brucespringsteen.JPG" alt="Favorite musical artist: Bruce Springsteen">
                 <img src="images/familyatBruce.JPG" alt="My family at a Bruce Springsteen Concert">
             </div>
+            <div id="gif_to_audio_text">
+                <input type="button" name="answer" value="Click me to get a taste of The Boss!" onclick="showDiv();playAudio();" />
+            </div>
+
+            <div id="hidden_until_button_click">
+                <img src="images/bruceperforming.gif" alt="Bruce Springsteen singing gif">
+                <audio id="borntorun" controls src="/images/borntorun.mp3">Your browser does not support the audio element.</audio>
+            </div>
+            
             
         </div>
 
